@@ -127,16 +127,18 @@ def masked_ascending_spectrum(mask, update_time):
 def main():
     indicator.on()
     while True:
-        mask_as_static_image(MASKS['LOVE'], (0, 255, 0))
-        time.sleep_ms(75)
-        mask_as_static_image(MASKS['LOVE1'], (0, 255, 0))
-        time.sleep_ms(75)
-        mask_as_static_image(MASKS['LOVE2'], (0, 255, 0))
-        time.sleep_ms(75)
-        mask_as_static_image(MASKS['LOVE1'], (0, 255, 0))
-        time.sleep_ms(75)
-        mask_as_static_image(MASKS['LOVE'], (0, 255, 0))
-        time.sleep_ms(75)
+        # mask_as_static_image(MASKS['LOVE'], (0, 255, 0))
+        # time.sleep_ms(75)
+        # mask_as_static_image(MASKS['LOVE1'], (0, 255, 0))
+        # time.sleep_ms(75)
+        # mask_as_static_image(MASKS['LOVE2'], (0, 255, 0))
+        # time.sleep_ms(75)
+        # mask_as_static_image(MASKS['LOVE1'], (0, 255, 0))
+        # time.sleep_ms(75)
+        # mask_as_static_image(MASKS['LOVE'], (0, 255, 0))
+        # time.sleep_ms(75)
+        led_test(100, 0)
+
         
         
 main()
