@@ -1,4 +1,3 @@
-from lib import Stepper
 from machine import Pin
 from neopixel import NeoPixel
 import time
