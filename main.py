@@ -18,6 +18,7 @@ MASKS = {
 
 
 led = NeoPixel(Pin(0, Pin.OUT), 225)
+indicator = Pin(1, Pin.OUT)
 
 
 def percentage_to_rgb(percentage):
@@ -124,6 +125,7 @@ def masked_ascending_spectrum(mask, update_time):
 
 
 def main():
+    indicator.on()
     while True:
         mask_as_static_image(MASKS['LOVE'], (0, 255, 0))
         time.sleep_ms(75)
